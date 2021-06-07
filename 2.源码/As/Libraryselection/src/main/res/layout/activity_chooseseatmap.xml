@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+	
+     <RelativeLayout
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent" 
+	    android:layout_weight="7">
+         <!-- 地图view -->
+	    <com.example.libraryselection.mappack.ChooseSeatMapLayerView
+	        android:id="@+id/chooseseatmap_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true">
+	        
+	    </com.example.libraryselection.mappack.ChooseSeatMapLayerView>
+    </RelativeLayout>
+    <!-- 控件组件view -->
+    <ScrollView 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+	    <LinearLayout
+	        android:id="@+id/chooseseatmap_linear"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <TextView 
+	            android:id="@+id/chooseseatmap_tx_showfloorc"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:text="@string/firstfloornamestr"
+	            android:gravity="center"/>
+	        
+	        <!-- 日期和时间段 -->
+	        <Spinner 
+           	    android:id="@+id/chooseseatmap_sp_day"
+           	    android:layout_width="200dp"
+           	    android:layout_height="match_parent"
+           	    android:layout_gravity="center"
+           	    />
+	        <Spinner 
+           	    android:id="@+id/chooseseatmap_sp_time"
+           	    android:layout_width="210dp"
+           	    android:layout_height="match_parent"
+           	    android:layout_gravity="center"
+           	    />
+	        <Button 
+	            android:id="@+id/chooseseatmap_bt_chooseseat"
+	            android:layout_marginTop="5dp"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+	            android:background="@drawable/bt_editmap_shape"
+	            android:text="选择此座位"
+	            android:layout_gravity="center"
+	            android:textColor="#fff"
+	     		android:textSize="14sp"/>
+	        
+	        <Button 
+	            android:id="@+id/chooseseatmap_bt_lastlayer"
+	            android:layout_marginTop="5dp"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+		        android:background="@drawable/bt_editmap_shape"
+	            android:text="上一层"
+	            android:layout_gravity="center"
+	            android:textColor="#fff"
+	     		android:textSize="14sp"/>
+	        <Button 
+	            android:id="@+id/chooseseatmap_bt_nextlayer"
+	            android:layout_marginTop="5dp"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+		        android:background="@drawable/bt_editmap_shape"
+	            android:text="下一层"
+	            android:layout_gravity="center"
+	            android:textColor="#fff"
+	     		android:textSize="14sp"/>
+	        <Button 
+	            android:id="@+id/chooseseatmap_bt_quit"
+	            android:layout_marginTop="5dp"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+		        android:background="@drawable/bt_editmap_shape"
+	            android:text="@string/quitstr"
+	            android:layout_gravity="center"
+	            android:textColor="#fff"
+	     		android:textSize="14sp"/>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

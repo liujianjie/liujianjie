@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraryselection.MainActivity">
+    
+    <!-- 底下部分 -->
+	<LinearLayout 
+	    android:id="@+id/main_linear_bottom"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+	    <RelativeLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1">
+	        <Button
+	            android:id="@+id/main_bt1_layer"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:enabled="false" 
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/mapbt_selector"/>
+		</RelativeLayout>
+		<RelativeLayout 
+		    android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1">
+	        <Button
+	            android:id="@+id/main_bt2_moudle"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/mapmouldebt_selector"
+	            android:enabled="true" />
+		</RelativeLayout>
+		<RelativeLayout 
+		    android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1">
+	        <Button
+	            android:id="@+id/main_bt3_user"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/userbt_selector"
+	            android:enabled="true" />
+	    </RelativeLayout>
+    </LinearLayout>
+    
+	<View
+	    android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBE6" 
+       	android:layout_above="@id/main_linear_bottom"/>
+	
+	<!-- 内容部分这里放fragment文件，在上面的控件上面 -->
+	<LinearLayout 
+	    android:id="@+id/main_linear_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_above="@id/main_view"
+	    android:background="@android:color/white">
+	    
+	    
+	</LinearLayout>
+</RelativeLayout>

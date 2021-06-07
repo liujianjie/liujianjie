@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/titlecontainerstyle">
+        <ImageView 
+            android:id="@+id/frag_maplayer_img_quit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrowthinleft"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预览楼层"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/frag_maplayer_img_quit"
+            style="@style/titlefontstyle"/>
+        <ImageView 
+            android:id="@+id/frag_maplayer_img_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/addonelayer"/>
+    </RelativeLayout>
+	
+   	<!-- recycleview -->
+   	<android.support.v7.widget.RecyclerView
+   	    android:id="@+id/frg_maplayer_recycleview"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent">
+   	    
+   	</android.support.v7.widget.RecyclerView>
+</LinearLayout>

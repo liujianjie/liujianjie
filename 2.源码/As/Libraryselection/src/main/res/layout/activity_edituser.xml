@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:id="@+id/edituser_rela_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        style="@style/titlecontainerstyle">
+        <ImageView 
+            android:id="@+id/edituser_img_quit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrowthinleft"/>
+	     <TextView
+	          android:id="@+id/edituser_tv_title"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerVertical="true"
+	         android:text="修改用户名"
+            android:layout_toRightOf="@id/edituser_img_quit"
+	         style="@style/titlefontstyle" />
+        
+    </RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <EditText 
+	        android:id="@+id/edituser_ed_val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+        <Button
+		    android:id="@+id/edituser_bt_save"
+		    android:layout_width="match_parent"
+		    android:layout_height="38dp"
+		    android:background="@drawable/btn_all_shape"
+		    android:text="保存"
+		    android:textSize="15sp"
+		    android:layout_marginTop="10dp"
+		    android:textColor="#ffffff" />
+    </LinearLayout>
+
+    
+    
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+    
+    <!-- 地图 -->
+	<com.example.libraryselection.mappack.ShowMapLayerView
+	    android:id="@+id/item_recycle_mapmoudleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+	</com.example.libraryselection.mappack.ShowMapLayerView>
+        
+	<!-- 信息居下 -->
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:weightSum="2">
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:weightSum="2">
+	        <Button 
+	            android:id="@+id/item_recycle_mapmoudle_bt_edit"
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:text="编辑"
+	            android:background="@drawable/bt_editmap_shape"
+	        	android:textSize="13sp"
+	        	android:layout_weight="1"
+	        	android:textColor="#fff"
+	        	android:layout_marginRight="5dp"/>
+	        <Button 
+	            android:id="@+id/item_recycle_mapmoudle_bt_del"
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:text="删除"
+	            android:background="@drawable/bt_white_shape"
+	     		android:textSize="13sp"
+	        	android:layout_weight="1"/>
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/item_recycle_mapmoudle_tvlayer"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:text="模板1"
+	        android:layout_weight="1"
+	        android:gravity="right|center_vertical"
+			android:paddingRight="5dp"/>
+	    
+	</LinearLayout>
+</LinearLayout>

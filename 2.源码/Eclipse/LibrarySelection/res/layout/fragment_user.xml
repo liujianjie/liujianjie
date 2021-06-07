@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frag_user_rela_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/titlecontainerstyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            style="@style/titlefontstyle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+		<ImageView 
+        	android:id="@+id/frag_user_img_headbgimg"
+		    android:layout_width="match_parent"
+		    android:layout_height="170dp"
+		    android:scaleType="centerCrop"
+		    android:src="@drawable/headimg1"/>
+        <com.example.libraryselection.RoundView
+            android:id="@+id/frag_user_img_touxiang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/headimg1" />
+         <TextView
+            android:id="@+id/frag_user_tv_name_belowimg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Frank"
+	        android:textColor="#ebebeb"
+	        android:layout_below="@id/frag_user_img_touxiang"
+	        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="个人信息" />
+        
+    </LinearLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="头像" 
+	        android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        
+         <ImageView 
+            android:id="@+id/frag_headimg_arrowright"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+            android:src="@drawable/arrowrightlightblack"/>
+        <TextView
+            android:id="@+id/frag_user_tv_head"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="设置" 
+            android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/frag_headimg_arrowright"/>
+    </RelativeLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="用户名" 
+	        android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/frag_user_arrowright"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+            android:src="@drawable/arrowrightlightblack"/>
+         <TextView
+            android:id="@+id/frag_user_tv_frag_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="未设置" 
+            android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/frag_user_arrowright"/>
+    </RelativeLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="密码" 
+	        android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/frag_userpwd_arrowright"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+            android:src="@drawable/arrowrightlightblack"/>
+         <TextView
+            android:id="@+id/frag_user_tv_frag_userpwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="未设置" 
+            android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/frag_userpwd_arrowright"/>
+    </RelativeLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="手机" 
+	        android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/frag_phone_arrowright"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+            android:src="@drawable/arrowrightlightblack"/>
+         <TextView
+            android:id="@+id/frag_user_tv_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="未设置" 
+            android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/frag_phone_arrowright"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="角色" 
+	        android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/frag_user_tv_role"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+ 	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" >
+    </View>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/frag_user_tv_myseat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="我的座位" />
+        
+    </LinearLayout>
+<!--  	<View -->
+<!--  	    android:id="@+id/frag_user_view1" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="1dp" -->
+<!--         android:background="#ebebeb" > -->
+<!--     </View> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+             android:id="@+id/frag_user_tv_managestudent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="学生管理" />
+        
+    </LinearLayout>
+ 	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        
+ 	    <Button
+		    android:id="@+id/frag_user_bt_quitlogin"
+		    android:layout_width="match_parent"
+		    android:layout_height="38dp"
+		    android:background="@drawable/btn_all_shape"
+		    android:text="退出登录"
+		    android:textSize="15sp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:textColor="#ffffff" />
+        
+    </LinearLayout>
+
+
+ 
+
+</LinearLayout>

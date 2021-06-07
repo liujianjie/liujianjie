@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <!-- mapkuangao -->
+     <dimen name="editfloormap_view_width">1360dp</dimen>
+    <dimen name="editfloormap_view_height">960dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#537090</item>
+        <item name="colorPrimaryDark">#537090</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 标题 -->
+    <!-- 标题容器样式 -->
+    <style name="titlecontainerstyle">
+        <item name="android:background">#537090</item>
+    </style>
+    <!-- 标题文字 -->
+    <style name="titlefontstyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+</resources>

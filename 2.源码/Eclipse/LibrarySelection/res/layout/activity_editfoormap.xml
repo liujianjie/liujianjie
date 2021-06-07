@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+    android:weightSum="10">
+	
+    <RelativeLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent" 
+	    android:layout_weight="8">
+         <!-- 地图view -->
+	    <com.example.libraryselection.mappack.EditMapLayerView
+	        android:id="@+id/edfloormap_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerInParent="true">
+	        
+	    </com.example.libraryselection.mappack.EditMapLayerView>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <!-- 控件组件view -->
+	    <ScrollView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        >
+		    <LinearLayout
+		        android:id="@+id/edfloormap_linear"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		        <TextView 
+		            android:id="@+id/edfloormap_tx_showfloorc"
+		            android:layout_width="match_parent"
+		            android:layout_height="50dp"
+		            android:text="@string/firstfloornamestr"
+		            android:gravity="center"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt1_setseat"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setseatstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt_setshujia"
+		            android:layout_marginTop="5dp"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setshujia"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt2_setbar"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setbarstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt3_setfield"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setfieldstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt_setseatno"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setseatnostr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt_setcancleseatno"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setcanleseatnostr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="12sp"/>
+		         <Button 
+		            android:id="@+id/edfloormap_bt_editmap_geneyqseat"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/geneyqseatstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt_editmap_recover"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/recoverstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+<!-- 		        <Button  -->
+<!-- 		            android:id="@+id/edfloormap_bt4_save" -->
+<!-- 		            android:layout_width="100dp" -->
+<!-- 		            android:layout_height="35dp" -->
+<!-- 		            android:layout_marginTop="5dp" -->
+<!-- 		            android:background="@drawable/bt_editmap_shape" -->
+<!-- 		            android:text="@string/savestr" -->
+<!-- 		            android:layout_gravity="center" -->
+<!-- 		            android:textColor="#fff" -->
+<!-- 		     		android:textSize="14sp"/> -->
+		        <Button 
+		            android:id="@+id/edfloormap_bt5_savemold"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/setmoldstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt7_lastlayer"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="上一层"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt8_nextlayer"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="下一层"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        
+		        <!-- 放一起试试，是修改模板的控件 -->
+		        <Button 
+		            android:id="@+id/edfloormap_bt9_geneMapLayer"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="设为新楼层"
+		            android:layout_gravity="center"
+		            android:visibility="gone"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt10_lastmoudle"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="上一模板"
+		            android:layout_gravity="center"
+		            android:visibility="gone"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        <Button 
+		            android:id="@+id/edfloormap_bt11_lastmoudle"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="下一模板"
+		            android:layout_gravity="center"
+		            android:visibility="gone"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		        
+		        <Button 
+		            android:id="@+id/edfloormap_bt6_quit"
+		            android:layout_width="100dp"
+		            android:layout_height="35dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/bt_editmap_shape"
+		            android:text="@string/quitstr"
+		            android:layout_gravity="center"
+		            android:textColor="#fff"
+		     		android:textSize="14sp"/>
+		    </LinearLayout>
+	    </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

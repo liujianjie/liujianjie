@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F7">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/titlecontainerstyle">
+        <ImageView 
+            android:id="@+id/regis_img_quit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrowthinleft"/>
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="用户注册"
+            android:layout_toRightOf="@id/regis_img_quit"
+	        android:layout_centerVertical="true"
+	        style="@style/titlefontstyle"/>
+        <TextView 
+		    android:id="@+id/regis_tv_gologin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="已有账号，去登录"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        style="@style/titlefontstyle"/>
+    </RelativeLayout>
+  
+    
+   	<!-- 输入控件 -->
+   	<LinearLayout
+   	    android:layout_marginTop="50dp"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="vertical"
+   	    android:background="#ffffff">
+		<EditText 
+		    android:id="@+id/regis_ed_name"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:hint="用户名"
+		    android:textSize="15sp"
+		    android:background="@null"
+		    android:paddingLeft="10dp"
+	    	android:paddingRight="10dp"
+		    />
+		<View android:layout_width="match_parent" android:layout_height="1dp"
+		    android:background="#EBEBE6"/>
+		<!-- 输入控件 -->
+		<EditText 
+		    android:id="@+id/regis_ed_pwd"
+		    android:layout_width="match_parent"
+	 		android:layout_height="40dp"
+		    android:hint="密码"
+		    android:textSize="15sp"
+		    android:background="@null"
+		    android:paddingLeft="10dp"
+	    	android:paddingRight="10dp"   
+		    android:inputType="textPassword"/>
+		<View 
+		    android:layout_width="match_parent" 
+		    android:layout_height="1dp"
+		    android:background="#EBEBE6"/>
+		<EditText 
+		    android:id="@+id/regis_ed_checkpwd"
+		    android:layout_width="match_parent"
+	 		android:layout_height="40dp"
+		    android:hint="确认密码"
+		    android:textSize="15sp"
+		    android:background="@null"
+		    android:paddingLeft="10dp"
+	    	android:paddingRight="10dp"   
+		    android:inputType="textPassword"/>
+	</LinearLayout>
+	<RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:background="#fff">
+		    <RadioGroup 
+	           android:id="@+id/regis_radiogroup_role"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+               android:orientation="horizontal">
+		        <RadioButton
+		            android:id="@+id/regis_radio_user"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="学生"
+		             android:textColor="#A0A09C"
+		            android:layout_centerVertical="true"
+		            android:checked="true"/>
+				<RadioButton
+				    android:id="@+id/regis_radio_admin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="管理员"
+		            android:textColor="#A0A09C"
+		            android:layout_centerVertical="true"
+		            android:checked="false"/>
+		    
+			</RadioGroup>
+		</RelativeLayout>
+	<Button
+	    android:id="@+id/regis_bt_reg"
+	    android:layout_width="match_parent"
+	    android:layout_height="38dp"
+	    android:background="@drawable/btn_all_shape"
+	    android:text="注 册"
+	    android:textSize="15sp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:textColor="#ffffff" />
+</LinearLayout>

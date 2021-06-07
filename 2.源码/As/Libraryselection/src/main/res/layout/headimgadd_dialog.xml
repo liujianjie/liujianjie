@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    	<Button
+    	    android:id="@+id/headimg_add_gallery"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="图库"
+	        android:background="@android:color/transparent"
+    	    />
+    	<View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#cccccc"/>
+    	<Button
+    	    android:id="@+id/headimg_add_takephoto"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="拍照"
+    	    android:background="@android:color/transparent"
+    	    />
+
+</LinearLayout>

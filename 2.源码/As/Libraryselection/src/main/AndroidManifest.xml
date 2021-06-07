@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.libraryselection">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.example.libraryselection.application.MyApplication">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditFloorMapActivity"
+            android:screenOrientation="landscape"
+            android:label="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+        <activity
+            android:name=".RegisterActivity">
+
+        </activity>
+        <activity
+            android:name=".ChooseSeatMapActivity"
+            android:screenOrientation="landscape"
+            android:label="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+
+        <activity
+            android:name=".EditUserActivity">
+
+        </activity>
+        <activity
+            android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".HeadImgDetailActivity">
+
+        </activity>
+        <activity
+            android:name=".MyseatActivity">
+
+        </activity>
+        <activity
+            android:name=".StudentActivity">
+
+        </activity>
+    </application>
+
+</manifest>
